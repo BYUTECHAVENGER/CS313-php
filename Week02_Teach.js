@@ -6,7 +6,7 @@ function clickMe() {
 
 function changeColor(){
     var textbox_id = "txtColor";
-    var textbox = document.getElementById(textbox-id);
+    var textbox = document.getElementById(textbox_id);
 
     var div_id = "div1";
     var div = document.getElementById(div_id);
@@ -14,6 +14,6 @@ function changeColor(){
 
 
         //verify values
-    var color = textbox.nodeValue;
-    div.stylelbackgroundColor = color;
+    var color = textbox.value;
+    div.style.backgroundColor = color;
 }
