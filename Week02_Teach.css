@@ -1,0 +1,24 @@
+
+
+.div-first {
+    background-color: aquamarine;
+    font-size: 4em;
+}
+
+.div-later {
+    font-size:  0.7em,
+
+}
+
+#div2 {
+
+    background-color: blueviolet;
+}
+
+#div3 {
+    background-color: darkcyan;
+}
+  
+.hover-bold:hover {
+    font-weight: bold;
+}
