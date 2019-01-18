@@ -15,7 +15,7 @@
         <div id="div2" class="Body">This is the body div.</div>
         <div id="div3"  class="Contact-me">This is the contact me div.</div>
 
-        <div id="div2" class="Body">You are sending signals from IP address:</div>
+        <div id="div2" class="Body">You are sending signals from IP address: <?php echo $_SERVER['REMOTE_ADDR'] ?></div>
         <?php echo $_SERVER['REMOTE_ADDR'] ?>
 
 
