@@ -13,7 +13,7 @@
 
         <div id="div1" class="Main-title">Welcome to the jungle baby!</div>
         <div id="div2" class="Body">This is the body div.</div>
-        <div><img src="eLessonPlan thumb.JPG" /></div>
+        <img src="eLessonPlan thumb.JPG" alt="My BEST work ever" class="center">
         <div id="div3"  class="Contact-me">This is the contact me div.</div>
         <button onclick="remove_stylesheet ();">Click here to view in text only mode</button><br />
         <div id="div2" class="Body">You are sending signals from IP address: <?php echo $_SERVER['REMOTE_ADDR'] ?></div>
