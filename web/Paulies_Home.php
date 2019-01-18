@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Paulie Snyder's Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Paulies_Home.css" />
+    <link id="stylesheetID" rel="stylesheet" type="text/css" media="screen" href="Paulies_Home.css" />
     <script src="Paulies_Home.js"></script>
 </head>
 <body>
