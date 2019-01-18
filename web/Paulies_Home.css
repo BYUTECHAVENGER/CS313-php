@@ -1,0 +1,26 @@
+#div1 {
+    font-weight: 900;
+    background-color: rgb(224, 171, 102);
+    font-style: italic;
+    font-family: cursive;
+    padding-bottom: 10em
+
+}
+
+#div2 {
+    font-weight: 900;
+    background-color: rgb(121, 116, 110);
+    font-style: italic;
+    font-family: cursive;
+    padding-bottom: 25em
+
+}
+
+#div3 {
+    font-weight: 900;
+    background-color: rgb(61, 60, 59);
+    font-style: italic;
+    font-family: cursive;
+    padding-bottom: 10em
+
+}
