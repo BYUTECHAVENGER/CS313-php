@@ -12,6 +12,7 @@
 
 
         <div id="div1" class="Main-title">Welcome to the jungle baby!</div>
+        <a href="Assignments.html" >Teleport to Paulie's Assignments page </a>
         <div id="div2" class="Body">This is the body div.</div>
         <img src="eLessonPlan thumb.JPG" title="My BEST work ever" class="center">
         <div id="div3"  class="Contact-me">This is the contact me div.</div>
