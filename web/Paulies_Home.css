@@ -2,8 +2,9 @@
     font-weight: 900;
     background-color: rgb(224, 171, 102);
     font-style: italic;
-    font-family: cursive;
-    padding-bottom: 10em
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 10em;
+    font-size: 28em
 
 }
 
@@ -21,7 +22,8 @@
     background-color: rgb(61, 60, 59);
     font-style: italic;
     font-family: cursive;
-    padding-bottom: 10em
+    padding-bottom: 10em;
+    font-size: 14em;
 }
 
 .center {
