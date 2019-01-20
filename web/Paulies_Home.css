@@ -21,9 +21,9 @@
     font-weight: 900;
     background-color: rgb(61, 60, 59);
     font-style: italic;
-    font-family: cursive;
+    font-family: monospace
     padding-bottom: 8em;
-    font-size: 14em;
+    font-size: 10em;
 }
 
 .center {
