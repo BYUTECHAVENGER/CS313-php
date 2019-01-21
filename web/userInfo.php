@@ -4,7 +4,7 @@
         // Is this email being input correctly?
    $userMajor = $_POST['userMajor'];
    $userComments = htmlspecialchars($_POST['userComments']);
-   $userCont[] = $_POST'userCont';
+   $userCont= $_POST['userCont'];
         // How to use as an array?
 ?>
 
