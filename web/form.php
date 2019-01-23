@@ -33,12 +33,12 @@ $Majors=array("CS"=>"Computer Science","WDD"=> "Web Design and Development","CIT
 
                     ?>
 
-                    <input type="radio" name="userMajor" value="Computer Science" checked><br>Computer Science
-                    <input type="radio" name="userMajor" value="Web Design and Development" checked>Web Design and Development <br>
+                   <!-- <input type="radio" name="userMajor" value="Computer Science" checked><br>Computer Science
+                     <input type="radio" name="userMajor" value="Web Design and Development" checked>Web Design and Development <br>
                     <input type="radio" name="userMajor" value="Computer Information Technology" checked>Computer Information Technology <br>
                     <input type="radio" name="userMajor" value="Computer Engineering" checked>Computer Engineering <br>
                     <input type="radio" name="userMajor" value="Software Engineering" checked>Software Engineering <br>
-                
+-->
                 <p>User Comments</p>
                 <textarea name="userComments" rows="10" cols="30">Insert your comments here.</textarea>
                 
