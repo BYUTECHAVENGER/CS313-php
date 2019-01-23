@@ -25,7 +25,7 @@
         
         <?php echo $_SERVER['REMOTE_ADDR'] ?>
 <br />
-        &copy; 2010-<?php echo date("Y") PaulieSnyder;?>
+        &copy; 2010-<?php echo date("Y");?>PaulieSnyder;
 
 
     
