@@ -6,6 +6,7 @@
    $userComments = htmlspecialchars($_POST['userComments']);
    $userCont= $_POST['userCont'];
         // How to use as an array?
+    $Continents=array("NA"=>"North America","SA"=>"SouthAmerica", "EU"=>"Europe", "AS"=>"Asia", "AU"=>"Australia", "AF"=>"Africa", "AN"=>"Antarctica");
 ?>
 
 <!DOCTYPE HTML>
@@ -23,7 +24,7 @@
             <h2>Your Continents: 
                 <?php 
                     foreach ($userCont as $value)
-                        echo "<h2> I have been to: $value </h2>";
+                        echo "<h2> I have been to: $Continents[$value] </h2>";
                 ?> 
             
             </h2>

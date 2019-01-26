@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Browse Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="checkbox/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Shopping Cart</legend>
+            <div>Customer Selection Table</div>
+            <table border = "2">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        
+            <tr>
+                <td>Orange</td>
+                <td>$1</td>
+                <td>
+                    <input  type="checkbox" name="orange" size="10"/> 
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Mango</td>
+                <td>$1</td>
+                <td>
+                    <input id="mangoId" onblur="calcItemPrice()" type="checkbox" name="mango" size="10" />
+                </td>
+            </tr>
+        
+                <tr>
+                    <td>Banana</td>
+                    <td>$1</td>
+                    <td>
+                        <input type="checkbox" name="banane" size="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tangerine</td>
+                    <td> $1 </td>
+                    <td><input type="checkbox" name="tangerine" size="10" /> </td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td> $1 </td>
+                    <td>
+                        <input  type="checkbox" name="apple" size="10"/> </td>
+                    
+                </tr>
+        
+                </table>
+                        <button href="browsepage.php">Total</button>
+                    </p>
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>

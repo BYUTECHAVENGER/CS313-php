@@ -46,13 +46,13 @@ $Majors=array("CS"=>"Computer Science","WDD"=> "Web Design and Development","CIT
 <!-- Would this make an array? How to package and unpackage that in PHP? -->             
                 <p>Hold down the Ctrl key to make multiple selections. </p>
                 <select name="userCont[]" size="7" multiple>
-                    <option value="NorthAmerica">North America</option>
-                    <option value="SouthAmerica">South America</option>
-                    <option value="Europe">Europe</option>
-                    <option value="Asia">Asia</option>
-                    <option value="Australia">Australia</option>
-                    <option value="Africa">Africa</option>
-                    <option value="Antartica">Antartica</option>
+                    <option value="NA">North America</option>
+                    <option value="SA">South America</option>
+                    <option value="EU">Europe</option>
+                    <option value="AS">Asia</option>
+                    <option value="AU">Australia</option>
+                    <option value="AF">Africa</option>
+                    <option value="AN">Antarctica</option>
                 </select>
                  <input type="submit" value="Submit">
             </form>
