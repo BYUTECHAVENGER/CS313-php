@@ -11,9 +11,24 @@
 </head>
 <body>
 
-<?php>
-<form method="post" action="
-Street: <input type="text" street="Street Address" value="<?php echo $street;?>">
-City: <input type="text" city="City" value="<?php echo $city;?>">
-State: <input type="text" state="State" value="<?php echo $state;?>">
-ZipCode: <input type="text" zip="ZipCode" value="<?php echo $zipCode;?>">
+<h1>Please enter your shipping address</h1>
+<form method="post" action="Confirmation.php">
+Street: <input type="text" name="street" ><br>
+City: <input type="text" name="city" ><br>
+State: <input type="text" name="state" ><br>
+ZipCode: <input type="text" name="zip" ><br>
+<br>
+<input type="submit">
+</form>
+
+
+<a href="ShoppingCart.php" target="_blank">Return to My Cart</a>
+<!--$street = $_SESSION['street'];
+$city = $_SESSION['city'];
+$state = $_SESSION['state'];
+$zip = $_SESSION['zip'];-->
+
+
+
+</body>
+</html>
