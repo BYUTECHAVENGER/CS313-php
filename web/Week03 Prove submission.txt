@@ -1,0 +1,32 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+
+https://pure-river-17691.herokuapp.com/Browse.html
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/BYUTECHAVENGER/CS313-php/tree/master/web/Shopping
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+The user will select the items desired from the available items
+the user can view cart
+user can submit or return to shopping
+User can complete the ppurchase
+All requiered elements of the code are functioning, no special instructions.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+All requiered elements of the code are functioning
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The coolest thing was figuring out how to reconcile the files that got mixed up on herokuapp
+6. List one strength and one limitation of using cookies.
+Cookies make it easy to resume your last session
+If used improperly they can avail data one would rather divulge.
+
+7. Please select the category you feel best describes your assignment:
+
+4 - Meets requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I ran out of time and was VERY satisfied to complete the minimums. I used some nice wording
+when creating the pages, I will learn to be fancier in the coming weeks.
