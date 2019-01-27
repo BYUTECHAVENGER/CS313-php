@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Browse Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="checkbox/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <form action="addtocart.php" method="post">
+        <fieldset>
+            <legend>Available Items</legend>
+            <div>Customer Selection Table</div>
+            <table border = "2">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        
+            <tr>
+                <td>Orange</td>
+                <td>$1</td>
+                <td>
+                    <input type="checkbox" name="fruits[]" size="10" value="Orange"/> 
+                </td>
+            </tr>
+        
+            <tr>
+                <td>Mango</td>
+                <td>$1</td>
+                <td>
+                    <input type="checkbox" name="fruits[]" size="10" value="Mango" />
+                </td>
+            </tr>
+        
+                <tr>
+                    <td>Banana</td>
+                    <td>$1</td>
+                    <td>
+                        <input type="checkbox" name="fruits[]" size="10" value="Banana"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tangerine</td>
+                    <td> $1 </td>
+                    <td>
+                        <input type="checkbox" name="fruits[]" size="10" value="Tangerine" /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td> $1 </td>
+                    <td>
+                        <input  type="checkbox" name="fruits[]"size="10" value="Apple"/> 
+                    </td>
+                    
+                </tr>
+        
+                </table>
+                <br>
+                <br>
+                
+                       <!-- <button>Total</button>-->
+                        <input type="submit"value="addtocart">
+            <br>
+            <br>
+            <a href="ShoppingCart.php" target="_blank">View my cart</a>
+            <br>
+            <br>
+            <a href="Checkout.php" target="_blank">Checkout</a>
+                    </p>
+                </div>
+        </fieldset>
+    </form>
+
+
+
+</body>
+</html>
