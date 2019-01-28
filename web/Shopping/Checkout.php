@@ -13,7 +13,7 @@
 
 <h1>Please enter your shipping address</h1>
 <form method="post" action="Confirmation.php">
-Street: <BR><input type="text" name="street" ><br>
+Street: <br><input type="text" name="street" ><br>
 City: <input type="text" name="city" ><br>
 State: <input type="text" name="state" ><br>
 ZipCode: <input type="text" name="zip" ><br>
