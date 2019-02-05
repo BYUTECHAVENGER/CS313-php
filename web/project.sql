@@ -30,9 +30,13 @@ CREATE TABLE insurance
  phone_number		                INTEGER,
  CONSTRAINT pk_insurance PRIMARY KEY(insurance_id));
 
+--I hasd not properly entered the foreign keys into the item table-SILLY MISTAKE.
 CREATE TABLE item
 (item_id                            INTEGER        NOT NULL,
  item_name                          VARCHAR(255) NOT NULL UNIQUE,
+ warehouse_id                       INTEGER	            NOT NULL,
+ owner_id                           INTEGER	                NOT NULL,  
+ insurance_id                       INTEGER	            NOT NULL,                       
  value			                    INTEGER NOT NULL,
  expiration		                    VARCHAR(255) NOT NULL,
  disposal_method	                TEXT,
