@@ -36,8 +36,10 @@ try {
 } catch(PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-$results=$_GET['item_name'];
+
 */
+$results=$_GET['item_name'];
+
 
 ?>
 
