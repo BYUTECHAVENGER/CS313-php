@@ -1,0 +1,29 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+TBD
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+https://github.com/BYUTECHAVENGER/CS313-php/blob/master/web/db/project.sql
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+The db and data are functionig well. The tables are populated.
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+I do not have a well formed PHP page to query the db
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+The cooles thing I learned this week was how easy it is to copy/paste the syntax for the data entry
+6. Why should you create a separate user account for your application to access the database?
+you should create a separate user account as this will protect your data from being wiped (via permissions)
+
+7. Please select the category you feel best describes your assignment:
+
+2 - Developing, but significantly deficient
+I will complete this on Tuesday
+
+
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I did not have a proper PHP page in place at the time of submission.
