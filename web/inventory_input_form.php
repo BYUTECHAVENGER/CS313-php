@@ -60,20 +60,9 @@ foreach ($db->query("SELECT * FROM item") as $row)
 ?>
     <H1> Enter in the item information:</H1>
 <!--<select name = "owner_id">  -->
-<?php
 
-#owner name
-
-<select name = "storage_type">
-    <option value = "dry_storage"> DRY STORAGE </option>
-    <option value = "climate_controlled"> CLIMATE CONTROLLED </option>
-    <option value = "refridgeration"> REFRIDGERATION </option>
-</select>
-
-?>
 <p>Item Name</p>
 <input type="text" name="item_name"><br>
-
 <p>quantity</p>
 <input type="text" name="quantity"><br>
 <p>disposal_method</p>
