@@ -11,9 +11,10 @@
 <body>
 <form action = "SECRET_PHP_PROCESSING_PAGE.php" method = "POST">
   
-echo "Results for the search of $results:";
+<!--echo "Results for the search of $results:";
 echo '<br/>';
 echo '<br/>';
+-->
 
 <table>
 <tr>
@@ -58,10 +59,10 @@ foreach ($db->query("SELECT * FROM item") as $row)
 
 ?>
     <H1> Enter in the item information:</H1>
-    <select name = "owner_id">
+<!--<select name = "owner_id">  -->
 <?php
 
-owner name
+#owner name
 
 <select name = "storage_type">
     <option value = "dry_storage"> DRY STORAGE </option>
@@ -73,27 +74,27 @@ owner name
 <p>Item Name</p>
 <input type="text" name="item_name"><br>
 
-quantity
+<p>quantity</p>
 <input type="text" name="quantity"><br>
-disposal_method
+<p>disposal_method</p>
 <input type="text" name="item_name"><br>
-notes
+<p>notes</p>
 <input type="text" name="item_name"><br>
 
 
  
  <h1>Insurance Information</h1>
 
- <?php
-  policy_number	
+ 
+  <p>policy_number</p>	
   <input type="text" name="policy_number"><br>	            
-  policy_value		
+  <p>policy_value</p>		
   <input type="text" name="policy_value"><br>               
-  policy_company
+  <p>policy_company</p>
   <input type="text" name="policy_company"><br>	                   
-  phone_number	
+  <p>phone_number</p>	
   <input type="text" name="phone_number"><br>
-  ?>
+  
 
 
 
