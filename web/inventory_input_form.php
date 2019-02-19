@@ -93,7 +93,7 @@ foreach ($db->query("SELECT * FROM item") as $row)
 <h1>Storage Information</h1>
 
 
-<h2>Storage Type</h2>
+<h2><b>Storage Type</b></h2>
 <select name = "storage_type">
     <option value = "dry_storage"> DRY STORAGE </option>
     <option value = "climate_controlled"> CLIMATE CONTROLLED </option>
@@ -105,9 +105,9 @@ foreach ($db->query("SELECT * FROM item") as $row)
 <h1><b>Dates</b></h1>
 
 
-<h2>Expiration date</h2>
+<h2><b>Expiration date</b></h2>
 <input type="date" name="expiration"><br>
-<h2>Received date</h2>
+<h2><b>Received date</b></h2>
 <input type="date" name="recieved date"><br>
 
 <br>
