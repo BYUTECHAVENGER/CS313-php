@@ -34,7 +34,7 @@ CREATE TABLE insurance
 CREATE TABLE item
 (item_id                            SERIAL        NOT NULL,
  item_name                          VARCHAR(255) NOT NULL UNIQUE,                     
- expiration		                    VARCHAR(255) NOT NULL,
+ expiration		                    DATE NOT NULL,
  disposal_method	                TEXT,
  recieved_date		                DATE,
  quantity		                    INTEGER NOT NULL,

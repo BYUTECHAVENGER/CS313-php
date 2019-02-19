@@ -1,30 +1,30 @@
 <?php
-# Heroku information for query
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
+// # Heroku information for query
+// try
+// {
+//   $dbUrl = getenv('DATABASE_URL');
 
-  $dbOpts = parse_url($dbUrl);
+//   $dbOpts = parse_url($dbUrl);
 
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
+//   $dbHost = $dbOpts["host"];
+//   $dbPort = $dbOpts["port"];
+//   $dbUser = $dbOpts["user"];
+//   $dbPassword = $dbOpts["pass"];
+//   $dbName = ltrim($dbOpts["path"],'/');
 
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+//   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
+//   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// }
+// catch (PDOException $ex)
+// {
+//   echo 'Error!: ' . $ex->getMessage();
+//   die();
+// }
 
 
 #XAMPP information for query
-/*$server = 'localhost';
+$server = 'localhost';
 $username = 'root';
 $password = '';
 $database = 'php project'; // replace with the name of the database you created on xampp MySQL
@@ -36,7 +36,7 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 $results=$_GET['item_name'];
-*/
+
 
 
 $item_name = $_POST['item_name'];

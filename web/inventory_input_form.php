@@ -1,3 +1,44 @@
+<?php
+/*
+# Heroku information for query
+try
+{
+  $dbUrl = getenv('DATABASE_URL');
+
+  $dbOpts = parse_url($dbUrl);
+
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
+
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
+*/
+
+#XAMPP information for query
+$server = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'php project'; // replace with the name of the database you created on xampp MySQL
+
+try {
+    $db = new PDO("mysql:host=$server;dbname=$database", $username, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+$results=$_POST['item_name'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +70,7 @@ echo '<br/>';
 <?php
 foreach ($db->query("SELECT * FROM item") as $row)
 {
-  echo '<tr>'
+  echo '<tr>';
  $item_name = $row ['item_name'];
 
  $expiration =$row ['expiration'];
@@ -42,19 +83,19 @@ foreach ($db->query("SELECT * FROM item") as $row)
  
  $notes = $row['notes'];
 
- echo "<td>$item_name</td>"
+ echo "<td>$item_name</td>";
 
- echo "<td>$expiration</td>"
+ echo "<td>$expiration</td>";
 
- echo "<td>$disposal_method</td>"
+ echo "<td>$disposal_method</td>";
 
- echo "<td>$recieved_date</td>"
+ echo "<td>$recieved_date</td>";
 
- echo "<td>$quantity</td>"
+ echo "<td>$quantity</td>";
 
- echo "<td>$notes</td>"
+ echo "<td>$notes</td>";
   
- echo '</tr>'
+ echo '</tr>';
 }
 
 ?>
@@ -66,9 +107,9 @@ foreach ($db->query("SELECT * FROM item") as $row)
 <p>quantity</p>
 <input type="text" name="quantity"><br>
 <p>disposal_method</p>
-<input type="text" name="item_name"><br>
+<input type="text" name="disposal_method"><br>
 <p>notes</p>
-<input type="text" name="item_name"><br>
+<input type="text" name="notes"><br>
 
 
  
@@ -105,7 +146,7 @@ storage_type
 expiration 
 <input type="date" name="expiration"><br>
 received_date
-<input type="date" name="receved_date"><br>
+<input type="date" name="received_date"><br>
 
 
 </form>
