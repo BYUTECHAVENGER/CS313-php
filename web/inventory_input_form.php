@@ -1,43 +1,5 @@
-<?php
-/*
-# Heroku information for query
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
 
-  $dbOpts = parse_url($dbUrl);
-
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
-
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
-*/
-
-#XAMPP information for query
-$server = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'php project'; // replace with the name of the database you created on xampp MySQL
-
-try {
-    $db = new PDO("mysql:host=$server;dbname=$database", $username, $password);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-}
-$results=$_POST['item_name'];
-?>
+<?php include "DB_Connection.php" ?>
 
 <!DOCTYPE html>
 <html>
@@ -99,39 +61,39 @@ foreach ($db->query("SELECT * FROM item") as $row)
 }
 
 ?>
-    <H1> Enter in the item information:</H1>
+    <H2> Enter in the item information:</H2>
 <!--<select name = "owner_id">  -->
 
 <p>Item Name</p>
-<input type="text" name="item_name"><br>
-<p>quantity</p>
+<input type="text" name="item name"><br>
+<p>Quantity</p>
 <input type="text" name="quantity"><br>
-<p>disposal_method</p>
+<p>Disposal method</p>
 <input type="text" name="disposal_method"><br>
-<p>notes</p>
+<p>Notes</p>
 <input type="text" name="notes"><br>
 
 
  
- <h1>Insurance Information</h1>
+ <h2>Insurance Information</h2>
 
  
-  <p>policy_number</p>	
+  <p>Policy number</p>	
   <input type="text" name="policy_number"><br>	            
-  <p>policy_value</p>		
+  <p>Policy value</p>		
   <input type="text" name="policy_value"><br>               
-  <p>policy_company</p>
+  <p>Policy company</p>
   <input type="text" name="policy_company"><br>	                   
-  <p>phone_number</p>	
+  <p>Phone number</p>	
   <input type="text" name="phone_number"><br>
   
 
 
 
-<h1>Storage Information</h1>
+<h2>Storage Information</h2>
 
 
-storage_type
+<h2>Storage Type</h2>
 <select name = "storage_type">
     <option value = "dry_storage"> DRY STORAGE </option>
     <option value = "climate_controlled"> CLIMATE CONTROLLED </option>
@@ -140,15 +102,16 @@ storage_type
 
 
 
-<h1>dates</h1>
+<h1><b>Dates</b></h1>
 
 
-expiration 
+<h2>Expiration date</h2>
 <input type="date" name="expiration"><br>
-received_date
-<input type="date" name="received_date"><br>
+<h2>Received date</h2>
+<input type="date" name="recieved date"><br>
 
 
+<input type="submit" value="Submit">
 </form>
 
 
