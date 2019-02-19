@@ -13,11 +13,7 @@
 </head>
 <body>
 <form action = "SECRET_PHP_PROCESSING_PAGE.php" method = "POST">
-  
-<!--echo "Results for the search of $results:";
-echo '<br/>';
-echo '<br/>';
--->
+
 
 <table>
 <tr>
@@ -61,7 +57,7 @@ foreach ($db->query("SELECT * FROM item") as $row)
 }
 
 ?>
-    <H2> Enter in the item information:</H2>
+    <H1><b> Enter in the item information:</b></H1>
 <!--<select name = "owner_id">  -->
 
 <p>Item Name</p>
@@ -75,7 +71,7 @@ foreach ($db->query("SELECT * FROM item") as $row)
 
 
  
- <h2>Insurance Information</h2>
+ <h1><b>Insurance Information</b></h1>
 
  
   <p>Policy number</p>	
@@ -90,7 +86,7 @@ foreach ($db->query("SELECT * FROM item") as $row)
 
 
 
-<h2>Storage Information</h2>
+<h1>Storage Information</h1>
 
 
 <h2>Storage Type</h2>
@@ -110,7 +106,8 @@ foreach ($db->query("SELECT * FROM item") as $row)
 <h2>Received date</h2>
 <input type="date" name="recieved date"><br>
 
-
+<br>
+<br>
 <input type="submit" value="Submit">
 </form>
 
