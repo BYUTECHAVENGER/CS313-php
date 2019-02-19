@@ -5,6 +5,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+    body {
+  background-color: rgb(144, 151, 106);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+    </style>
 
     <link rel="stylesheet" type="text/css" href="Inventory.css">
     <meta charset="utf-8" />
