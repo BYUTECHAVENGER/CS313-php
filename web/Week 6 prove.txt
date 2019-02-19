@@ -1,21 +1,21 @@
 After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
 
 1. Copy and paste the URL for your web application:
-
+https://pure-river-17691.herokuapp.com/inventory_input_form.php
 
 2. Copy and paste the URL for your source code repository (e.g., GitHub):
-
+https://github.com/BYUTECHAVENGER/CS313-php/tree/master/web
 
 3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
-
+The user may enter item table informationan and submit this by clicking at the bottom of the page. This data will be updated into the itme table.
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-
+The user may enter in Insurance information, this is not entered into any table at this time. This was not part of the asignment and was not commencted out.
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
-
+The coolest this I learned was a simple way to inlcude the DB connection info in a file-and use the <?PHP include "%FILE%" ?>
 6. What is a benefit of having a foreign key constraint?
-
+A benefit of having a foriegn key restrtaint is it can make searching a database easier, it willalso reduce the amount of records.
 
 7. Please select the category you feel best describes your assignment:
 1 - Some attempt was made

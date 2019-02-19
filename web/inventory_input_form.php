@@ -5,6 +5,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <link rel="stylesheet" type="text/css" href="Inventory.css">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Inventory Intake/View Portal</title>
