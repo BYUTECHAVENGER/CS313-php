@@ -64,13 +64,13 @@ foreach ($db->query("SELECT * FROM item") as $row)
     <H1><b> Enter in the item information:</b></H1>
 <!--<select name = "owner_id">  -->
 
-<p>Item Name</p>
+<p><b>Item Name</b></p>
 <input type="text" name="item name"><br>
-<p>Quantity</p>
+<p><b>Quantity</b></p>
 <input type="text" name="quantity"><br>
-<p>Disposal method</p>
+<p><b>Disposal method</b></p>
 <input type="text" name="disposal_method"><br>
-<p>Notes</p>
+<p><b>Notes</b></p>
 <input type="text" name="notes"><br>
 
 
@@ -78,13 +78,13 @@ foreach ($db->query("SELECT * FROM item") as $row)
  <h1><b>Insurance Information</b></h1>
 
  
-  <p>Policy number</p>	
+  <p><b>Policy number</b></p>	
   <input type="text" name="policy_number"><br>	            
-  <p>Policy value</p>		
+  <p><b>Policy value</b></p>		
   <input type="text" name="policy_value"><br>               
-  <p>Policy company</p>
+  <p><b>Policy company</b></p>
   <input type="text" name="policy_company"><br>	                   
-  <p>Phone number</p>	
+  <p><b>Phone number</b></p>	
   <input type="text" name="phone_number"><br>
   
 
