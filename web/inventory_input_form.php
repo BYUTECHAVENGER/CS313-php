@@ -1,5 +1,5 @@
 
-<?php include "DB_Connection.php" ?>
+<?php include "DB_Connection.php"; ?>
 
 <!DOCTYPE html>
 <html>
