@@ -18,11 +18,11 @@ The coolest this I learned was a simple way to inlcude the DB connection info in
 A benefit of having a foriegn key restrtaint is it can make searching a database easier, it willalso reduce the amount of records.
 
 7. Please select the category you feel best describes your assignment:
-1 - Some attempt was made
-2 - Developing, but significantly deficient
-3 - Slightly deficient, but still mostly adequate
-4 - Meets requirements
+
 5 - Shows creativity and excels above and beyond requirements
 
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
+I added a .css file and tinkered with this for about 30 minutes to get the right look!
+
+I AM VERY EXCITED ABOUT SEEING MY CODE IMMEDIATELY, AND AM IN LOVE WITH CREATING WEBSITES
