@@ -27,14 +27,14 @@
 <th>NOTES       </th>
 <th>OWNER       </th>
 <th>INS ID      </th>
-<th>POLICY #    </th>
+<th>POLICY    </th>
 <th>POLICY VALUE</th>
-<th>OWNER #     </th>
-<th>EMERGENCY # </th>
+<th>OWNER PHONE    </th>
+<th>EMERGENCY PHONE </th>
 </tr>
 
 <?php
-foreach ($db->query("SELECT * FROM item JOIN owners on item.owner_id = owners.owner_id JOIN insurance on item.insurance_id = insurance.insurance_id ") as $row)
+foreach ($db->query("SELECT * FROM item  JOIN insurance on item.insurance_id = insurance.insurance_id JOIN owners on item.owner_id = owners.owner_id ") as $row)
 {
   echo '<tr>';
 
