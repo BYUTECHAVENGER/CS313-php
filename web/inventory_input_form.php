@@ -1,49 +1,78 @@
 
-<?php include "DB_Connection.php";
- ?>
+<?php include "DB_Connection.php" ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-
-
-    <link rel="stylesheet" type="text/css" href="Inventory.css">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Inventory Intake/View Portal</title>
+    <title>Delilah's Holding Co.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+
+<H1>ITEM ENTRY PAGE                                       Delilah's Holding Co.</H1>
 <body>
 <form action = "SECRET_PHP_PROCESSING_PAGE.php" method = "POST">
 
 
 <table>
 <tr>
-<th>Item Name is :  </th>
-<th>Item expiration date is : </th>
-<th>Item disposal method is:  </th>
-<th>Item received date is :  </th>
-<th>Item quantity is:  </th>
-<th>Item notes/special instructions are:  </th>
+<th>ITEM        </th>
+<th>EXPIRATION  </th>
+<th>DISPOSAL    </th>
+<th>RECEIVED    </th>
+<th>QTY         </th>
+<th>NOTES       </th>
+<th>OWNER       </th>
+<th>INS ID      </th>
+<th>POLICY #    </th>
+<th>POLICY VALUE</th>
+<th>OWNER #     </th>
+<th>EMERGENCY # </th>
 </tr>
 
 <?php
-foreach ($db->query("SELECT * FROM item") as $row)
+foreach ($db->query("SELECT * FROM item JOIN insurance on item.insurance_id = insurance.insurance_id JOIN owners on item.owner_id = owners.owner_id") as $row)
 {
   echo '<tr>';
+
  $item_name = $row ['item_name'];
 
  $expiration =$row ['expiration'];
   
- $disposal_method = $row['disposal_method'];
+ $disposal_method = $row ['disposal_method'];
   
- $recieved_date = $row['recieved_date'];
+ $recieved_date = $row ['recieved_date'];
   
- $quantity = $row['quantity'];
+ $quantity = $row ['quantity'];
  
- $notes = $row['notes'];
+ $notes = $row ['notes'];
+
+ $owner_id = $row ['owner_id'];
+
+ $insurance_id = $row ['insurance_id'];
+
+ $policy_number = $row ['policy_number'];
+
+ $policy_value = $row ['policy_value'];
+
+ $phone_number = $row ['phone_number'];
+
+ $first_name = $row ['first_name'];
+
+ $last_name = $row ['last_name'];
+
+ $address_street = $row ['address_street'];
+ 
+ $address_city = $row ['address_city'];
+ 
+ $address_state = $row ['address_state'];
+ 
+ $phone_number = $row ['phone_number'];
+ 
+ $emergency_number = $row ['emergency_number'];
 
  echo "<td>$item_name</td>";
 
@@ -56,35 +85,75 @@ foreach ($db->query("SELECT * FROM item") as $row)
  echo "<td>$quantity</td>";
 
  echo "<td>$notes</td>";
-  
+
+ echo "<td>$first_name $last_name</td>";
+
+ echo "<td>$insurance_id</td>";
+
+ echo "<td>$policy_number</td>";
+
+ echo "<td>$policy_value</td>";
+
+ echo "<td>$phone_numuber</td>";
+
+ echo "<td>$emergency_number</td>";
+
  echo '</tr>';
 }
 
 ?>
-    <H1><b> Enter in the item information:</b></H1>
+    <H1><b> Item Information</b></H1>
 <!--<select name = "owner_id">  -->
 
-<p><b>Item Name</b></p>
-<input type="text" name="item name"><br>
-<p><b>Quantity</b></p>
+<p>Item Name</p>
+<input type="text" name="item_name"><br>
+<p>Quantity</p>
 <input type="text" name="quantity"><br>
-<p><b>Disposal method</b></p>
+<p>Disposal Method</p>
 <input type="text" name="disposal_method"><br>
-<p><b>Notes</b></p>
+<p>Notes</p>
 <input type="text" name="notes"><br>
+
+
+<h1><b>Owner Information</b></h1>
+
+<p>Owner's First Name</p>
+<input type="text" name="first_name"><br>
+
+<p>Owner's Last Name</p>
+<input type="text" name="last_name"><br>
+
+<p>Street Address</p>
+<input type="text" name="address_street"><br>
+
+<p>City</p>
+<input type="text" name="address_city"><br>
+
+<p>State</p>
+<input type="text" name="address_state"><br>
+
+<p>Owner's Phone Number</p>
+<input type="text" name="phone_number"><br>
+
+<p>Owner's EMERGENCY number</p>
+<input type="text" name="emergency_number"><br>
+
 
 
  
  <h1><b>Insurance Information</b></h1>
 
  
-  <p><b>Policy number</b></p>	
-  <input type="text" name="policy_number"><br>	            
-  <p><b>Policy value</b></p>		
-  <input type="text" name="policy_value"><br>               
-  <p><b>Policy company</b></p>
-  <input type="text" name="policy_company"><br>	                   
-  <p><b>Phone number</b></p>	
+  <p>Policy Number</p>	
+  <input type="text" name="policy_number"><br>
+
+  <p>Policy value</p>		
+  <input type="text" name="policy_value"><br> 
+
+  <p>Policy Company</p>
+  <input type="text" name="policy_company"><br>	
+
+  <p>Agent Phone Number</p>	
   <input type="text" name="phone_number"><br>
   
 
@@ -93,7 +162,7 @@ foreach ($db->query("SELECT * FROM item") as $row)
 <h1>Storage Information</h1>
 
 
-<p><b>Storage Type</b></p>
+<h2>Storage Type</h2>
 <select name = "storage_type">
     <option value = "dry_storage"> DRY STORAGE </option>
     <option value = "climate_controlled"> CLIMATE CONTROLLED </option>
@@ -105,9 +174,10 @@ foreach ($db->query("SELECT * FROM item") as $row)
 <h1><b>Dates</b></h1>
 
 
-<p><b>Expiration date</b></p>
+<h2>Expiration Date</h2>
 <input type="date" name="expiration"><br>
-<p><b>Received date</b></p>
+
+<h2>Received Date</h2>
 <input type="date" name="recieved date"><br>
 
 <br>
