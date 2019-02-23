@@ -1,4 +1,4 @@
-                                                                                                                                                                                           <?php include "DB_Connection.php";
+<?php include "DB_Connection.php";
 
 
 $item_name = $_POST['item_name'];
