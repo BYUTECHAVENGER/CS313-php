@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Delilah's Holding Co.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="inventory.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Inventory.css" />
     <script src="main.js"></script>
 </head>
 
