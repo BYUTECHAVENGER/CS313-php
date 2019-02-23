@@ -7,10 +7,10 @@ PHP form that collects information to populate and display in the wharehouse dat
 https://pure-river-17691.herokuapp.com/inventory_input_form.php
 
 3. The GitHub URL for your source code repository:
-
+https://github.com/BYUTECHAVENGER/CS313-php/tree/master/web
 
 4. A link to the SQL file that contains the commands used to create your tables (e.g. a link to the myDb.sql file at GitHub, or something similar).
-https://github.com/BYUTECHAVENGER/CS313-php/tree/master/web/db/project.sql
+https://github.com/BYUTECHAVENGER/CS313-php/tree/master/web/project.sql
 
 5. Please provide a brief description of what your project does and how to use the application. Make sure to include any required information like a username and password.
 The application will collect and place into tables, data for a particular item stored in a storage facility. The owners information, the tiem information, and insurance information for the item.
