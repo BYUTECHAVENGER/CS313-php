@@ -16,7 +16,7 @@ https://github.com/BYUTECHAVENGER/CS313-php/tree/master/web/project.sql
 The application will collect and place into tables, data for a particular item stored in a storage facility. The owners information, the tiem information, and insurance information for the item.
 
 6. Briefly describe any pieces of the assignment that are not yet working correctly.
-There is a table for locations, I do not use this table.
+There is a table for warehouse, I do not use this table.
 
 
 --------------------------------
