@@ -1,4 +1,4 @@
-<?php include "DB_Connection.php";
+                                                                                                                                                                                           <?php include "DB_Connection.php";
 
 
 $item_name = $_POST['item_name'];
@@ -28,12 +28,12 @@ $phone_numuber = $_POST['phone_number'];
 $db->query ("INSERT INTO owners (first_name, last_name, address_street, address_city, address_state, phone_number, emergency_number)
  VALUES ('$first_name', '$last_name', '$address_street', '$address_city', '$address_state', '$phone_number', '$emergency_number')");
 
-$owner_id = $db->lastInsertId();
+$newowner_id = $db->lastInsertId('owners_owner_id_seq');
 
 $db->query ("INSERT INTO insurance (policy_number, policy_value, policy_company, phone_number)
  VALUES ('$policy_number', '$policy_value', '$policy_company', '$phone_numuber')");
 
-$insurance_id = $db->lastInsertId();
+$newinsurance_id = $db->lastInsertId('insurance_insurance_id_seq');
 
 $db->query ("INSERT INTO item (item_name, expiration, disposal_method, recieved_date, quantity, storage_type, notes, insurance_id)
  VALUES ('$item_name', '$expiration', '$disposal_method', '$recieved_date', $quantity, '$storage_type', '$notes', '$insurance_id')");
