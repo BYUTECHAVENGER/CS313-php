@@ -34,7 +34,7 @@
 </tr>
 
 <?php
-foreach ($db->query("SELECT * FROM item JOIN owners ON item.owner_id = owners.owner_id JOIN insurance ON item.insurance_id = insurance.insurance_id ") as $row)
+foreach ($db->query("SELECT * FROM item #JOIN owners ON item.owner_id = owners.owner_id JOIN insurance ON item.insurance_id = insurance.insurance_id ") as $row)
 {
   echo '<tr>';
 
