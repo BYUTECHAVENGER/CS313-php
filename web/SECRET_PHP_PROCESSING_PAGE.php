@@ -33,7 +33,7 @@ $owner_id = $db->lastInsertId();
 $db->query ("INSERT INTO insurance (policy_number, policy_value, policy_company, phone_number)
  VALUES ('$policy_number', '$policy_value', '$policy_company', '$phone_numuber')");
 
-$insurance_id = $db->lastInsertId();
+$newinsurance_id = $db->lastInsertId();
 
 $db->query ("INSERT INTO item (item_name, expiration, disposal_method, recieved_date, quantity, storage_type, notes, insurance_id)
  VALUES ('$item_name', '$expiration', '$disposal_method', '$recieved_date', $quantity, '$storage_type', '$notes', '$insurance_id')");
