@@ -13,10 +13,10 @@ https://github.com/BYUTECHAVENGER/CS313-php/tree/master/web
 https://github.com/BYUTECHAVENGER/CS313-php/tree/master/web/project.sql
 
 5. Please provide a brief description of what your project does and how to use the application. Make sure to include any required information like a username and password.
-The application will collect and place into tables, data for a particular item stored in a storage facility. The owners information, the tiem information, and insurance information for the item.
+The application will collect and place into tables, data for a particular item stored in a storage facility. The owners information, the item information, and insurance information for the item.
 
 6. Briefly describe any pieces of the assignment that are not yet working correctly.
-There is a table for warehouse, I do not use this table.
+There is a table for warehouse, I do not use this table at this time-it is an internal table that would be populated by staff.
 
 
 --------------------------------
@@ -47,18 +47,18 @@ Categories
 
 Criteria
 ----------
-(5) 1. Professional look and feel.
+(4) 1. Professional look and feel.
 (5) 2. Accomplishes a meaningful/interesting task.
 (5) 3. Demonstrates skill with HTML, CSS, and JavaScript.
 (5) 4. Demonstrates skill with PHP.
 (4) 5. Demonstrates good database design principles.-
-(5) 6. Demonstrates skill in database retrieval.
+(4) 6. Demonstrates skill in database retrieval.
 (4) 7. Demonstrates skill in database modification.
 (4) 8. Demonstrates mastery of client-side/server-side coordination and communication.
 (5) 9. Overall project evaluation.
 
 10. Finally, please provide an overall description/justification of the categories you selected.
 
-I am very pleased with the look and feel of my application. I was not fully comnfortabel giving
+I am very pleased with the look and feel of my application. I was not fully comnfortable giving
 myself 5's for all criteria. I have given myself 4's where I feel I have completed tasks to the
-best of my abilities, however I feel I do not an expert's understanding the skills.
+best of my abilities however I feel I do not an expert's understanding the skills.
