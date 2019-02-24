@@ -25,16 +25,16 @@
 <th>RECEIVED    </th>
 <th>QTY         </th>
 <th>NOTES       </th>
-<th>OWNER       </th>
+<!-- <th>OWNER       </th> -->
 <th>INS ID      </th>
 <th>POLICY    </th>
 <th>POLICY VALUE</th>
-<th>OWNER PHONE    </th>
-<th>EMERGENCY PHONE </th>
+<!-- <th>OWNER PHONE    </th> -->
+<!-- <th>EMERGENCY PHONE </th> -->
 </tr>
 
 <?php
-foreach ($db->query("SELECT * FROM item LEFT JOIN insurance on item.insurance_id = insurance.insurance_id LEFT JOIN owners on item.owner_id = owners.owner_id") as $row)
+foreach ($db->query("SELECT * FROM item Left outer JOIN owners on item.owner_id = owners.owner_id Left outer JOIN insurance on item.insurance_id = insurance.insurance_id  ") as $row)
 {
   echo '<tr>';
 
@@ -86,7 +86,7 @@ foreach ($db->query("SELECT * FROM item LEFT JOIN insurance on item.insurance_id
 
  echo "<td>$notes</td>";
 
- echo "<td>$first_name $last_name</td>";
+//  echo "<td>$first_name</td>";
 
  echo "<td>$insurance_id</td>";
 
@@ -94,9 +94,9 @@ foreach ($db->query("SELECT * FROM item LEFT JOIN insurance on item.insurance_id
 
  echo "<td>$policy_value</td>";
 
- echo "<td>$phone_numuber</td>";
+//  echo "<td>$phone_number</td>";
 
- echo "<td>$emergency_number</td>";
+//  echo "<td>$emergency_number</td>";
 
  echo '</tr>';
 }

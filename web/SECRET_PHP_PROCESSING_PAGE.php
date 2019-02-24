@@ -23,7 +23,7 @@ $policy_value = $_POST["policy_value"];
 
 $policy_company = $_POST["policy_company"];
 
-$phone_numuber = $_POST['phone_number'];
+$phone_number = $_POST['phone_number'];
 
 $first_name = $_POST['first_name'];
 
@@ -46,7 +46,7 @@ $db->query ("INSERT INTO owners (first_name, last_name, address_street, address_
 $owner_id = $db->lastInsertId();
 
 $db->query ("INSERT INTO insurance (policy_number, policy_value, policy_company, phone_number)
- VALUES ('$policy_number', '$policy_value', '$policy_company', '$phone_numuber')");
+ VALUES ('$policy_number', '$policy_value', '$policy_company', '$phone_number')");
 
 $insurance_id = $db->lastInsertId();
 
