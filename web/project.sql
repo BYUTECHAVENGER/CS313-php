@@ -20,7 +20,7 @@ CREATE TABLE owners
  address_state		                VARCHAR(255),
  phone_number		                VARCHAR(20),
  emergency_number	                VARCHAR(20),
- CONSTRAINT pk_owner PRIMARY KEY(owner_id));
+ CONSTRAINT pk_owners PRIMARY KEY(owner_id));
 
 CREATE TABLE insurance
 (insurance_id                       SERIAL            NOT NULL,
