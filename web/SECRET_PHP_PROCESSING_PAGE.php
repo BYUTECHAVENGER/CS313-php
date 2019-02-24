@@ -25,6 +25,21 @@ $policy_company = $_POST["policy_company"];
 
 $phone_numuber = $_POST['phone_number'];
 
+$first_name = $POST['first_name'];
+
+$last_name =$POST['last_name'];
+
+$address_street = $POST['address_street'];
+
+$address_city = $POST['address_city'];
+
+$address_state = $POST['address_state'];
+
+$phone_number = $POST['phone_number'];
+
+$emergency_number = $POST['emergency_number'];
+
+
 $db->query ("INSERT INTO owners (first_name, last_name, address_street, address_city, address_state, phone_number, emergency_number)
  VALUES ('$first_name', '$last_name', '$address_street', '$address_city', '$address_state', '$phone_number', '$emergency_number')");
 
