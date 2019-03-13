@@ -1,0 +1,35 @@
+#div1 {
+    font-weight: 900;
+    background-color: rgb(224, 171, 102);
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 2em;
+    font-size: 12em
+
+}
+
+#div2 {
+    font-weight: 900;
+    background-color: rgb(121, 116, 110);
+    font-style: italic;
+    font-family: cursive;
+    padding-bottom: 2em
+
+}
+
+#div3 {
+    font-weight: 900;
+    background-color: rgb(61, 60, 59);
+    font-style: italic;
+    font-family: monospace
+    padding-bottom: 2em;
+    font-size: 10em;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
