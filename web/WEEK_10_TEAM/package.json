@@ -1,11 +1,12 @@
 {
   "name": "week_10_team",
   "version": "1.0.0",
-  "description": "",
+  "description": "WEEEK TEN TEAM PROJECT",
   "main": "server.js",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^7.8.2"
   },
   "devDependencies": {},
   "scripts": {
